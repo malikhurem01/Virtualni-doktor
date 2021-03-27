@@ -8,3 +8,6 @@ Tehnologije koje su korištene:
   - CSS
   - Javascript
   - Templating engine: EJS
+
+U kodu je korištena MVC arhitektura:
+Kod je podijeljen na kontrolere, modele, rutere, public, views kao i sam app.js
