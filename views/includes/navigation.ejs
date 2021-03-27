@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Virtualni Doktor</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- link css -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Favicons -->
+    <link href="/img/favicon.jpg" rel="icon" />
+    <link href="/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link href="/vendor/animate.css/animate.min.css" rel="stylesheet" />
+    <link href="/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/vendor/bootstrap-datepicker/css/bootstrap-datepicker.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: Medilab - v2.1.1
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <!-- ======= Top Bar ======= -->
+    <div
+      id="topbar"
+      class="d-none d-lg-flex align-items-center fixed-top"
+    ></div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <h1 class="logo mr-auto"><a href="index.html">Virtualni Doktor</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="/#hero">Početna</a></li>
+            <li><a href="/#about">O nama</a></li>
+            <li><a href="/#services">Usluge</a></li>
+            <li><a href="/#contact">Kontakt</a></li>
+            <li><a href="/#appointment">Zakažite sastanak</a></li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+        <%if(!isAuthenticated){%> <%if(path != '/signup'){%>
+        <a href="/signup" class="appointment-btn scrollto">Registracija</a>
+        <%}%> <%if(path != '/login'){ %>
+        <a href="/login" class="appointment-btn scrollto">Prijava</a>
+        <%}%> <%}%> <%if(isAuthenticated) {%>
+        <a href="/my-profile" class="appointment-btn scrollto">Moj račun</a>
+
+        <form action="/logout" method="POST">
+          <input
+            style="border: none; outline: none"
+            type="submit"
+            value="Odjava"
+            class="appointment-btn scrollto"
+          />
+        </form>
+
+        <% } %>
+      </div>
+    </header>
+  </body>
+</html>

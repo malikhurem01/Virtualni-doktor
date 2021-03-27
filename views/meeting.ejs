@@ -1,0 +1,124 @@
+<%-include('./includes/navigation')%>
+<body>
+  <style>
+    body {
+      background-color: #f7f7f7;
+    }
+    .heading__h3 {
+      position: absolute;
+      top: 14%;
+      left: 15%;
+    }
+    .screen {
+      height: 65vh;
+      width: 70%;
+      background-color: black;
+      position: absolute;
+      top: 21%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .icon-div {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .icon {
+      font-size: 95px;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -70%);
+    }
+    .options {
+      position: absolute;
+      bottom: -2%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .volume {
+      display: inline-block;
+      padding: 50px;
+    }
+    .microphone {
+      display: inline-block;
+      padding: 50px;
+    }
+    .icon__sec {
+      font-size: 40px;
+      border-style: solid;
+      border-width: 5px;
+      border-color: rgb(82, 169, 255);
+      border-radius: 50%;
+      padding: 5px 8px;
+    }
+    .icon__sec:hover {
+      color: rgb(0, 128, 255);
+      cursor: pointer;
+      border-color: rgb(82, 169, 255);
+    }
+    .camera{
+            display: inline-block;
+      padding: 50px;
+    }
+  </style>
+  <div>
+    <div class="heading__h3">
+      <h3>
+        Molimo Vas, sačekajte dok se doktor priključi na poziv. Hvala na
+        strpljenju.
+      </h2>
+    </div>
+    <div class="screen">
+      <div class="icon-div">
+        <i class="icon icofont-video-cam"></i>
+      </div>
+    </div>
+
+    <div class="options">
+    <div class="camera">
+        <i class="icon__sec icon-camera icofont-camera"></i>
+    </div>
+      <div class="volume">
+        <i class="icon__sec icon-volume icofont-volume-up"></i>
+      </div>
+      <div class="microphone">
+        <i class="icon__sec icon-microphone icofont-mic"></i>
+      </div>
+    </div>
+  </div>
+  <script defer>
+    let volume = document.querySelector('.icon-volume');
+    let mic = document.querySelector('.icon-microphone');
+    let camera = document.querySelector('.icon-camera');
+    camera.addEventListener('click', () => {
+      if (camera.className.split(' ')[2] == 'icofont-camera') {
+        camera.classList.remove('icofont-camera');
+        camera.classList.add('icofont-not-allowed');
+      } 
+      else if (camera.className.split(' ')[2] == 'icofont-not-allowed') {
+        camera.classList.remove('icofont-not-allowed');
+        camera.classList.add('icofont-camera');
+      }
+    })
+    mic.addEventListener('click', () => {
+      if (mic.className.split(' ')[2] == 'icofont-mic') {
+        mic.classList.remove('icofont-mic');
+        mic.classList.add('icofont-mic-mute');
+      } else if (mic.className.split(' ')[2] == 'icofont-mic-mute') {
+        mic.classList.remove('icofont-mic-mute');
+        mic.classList.add('icofont-mic');
+      }
+    });
+    volume.addEventListener('click', () => {
+      if (volume.className.split(' ')[2] == 'icofont-volume-up') {
+        volume.classList.remove('icofont-volume-up');
+        volume.classList.add('icofont-volume-mute');
+      } else if (volume.className.split(' ')[2] == 'icofont-volume-mute') {
+        volume.classList.remove('icofont-volume-mute');
+        volume.classList.add('icofont-volume-up');
+      }
+    });
+  </script>
+</body>

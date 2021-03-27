@@ -1,0 +1,128 @@
+<%-include('./includes/navigation')%>
+</head>
+<body>
+<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+
+
+		img {
+			border-radius: 50%;
+			height: 10em;
+			width: 10em;
+		}
+
+
+
+		#content {
+			padding: 20px;
+			transition: margin-left 0.7s;
+			overflow: hidden;
+			width: 100%;
+		}
+        
+        .container {
+        	margin-left: 10%;
+        	margin-right: 20%;
+        }
+
+        .ime {
+        	font-weight: bold;
+        	font-size: 4rem;
+        	color: rgb(40, 121, 202);
+        	text-transform: uppercase;
+        	font-family: 'Saira Extra Condensed', sans-serif;
+        }
+
+        .mejl {
+        	color: rgb(40, 121, 202);
+        	font-size: 1.5rem;
+        	font-family: 'Saira Extra Condensed', sans-serif;
+        }
+
+        .broj {
+        	font-size: 1.5rem;
+        	text-transform: uppercase;
+        	font-family: 'Saira Extra Condensed', sans-serif;
+        }
+
+        h2 {
+        	font-size: 2rem;
+        }
+
+        h3 {
+        	font-size: 1.5rem;
+        }
+
+        .date {
+        	font-size: 1.25rem;
+        }
+
+        .tekst {
+        	font-size: 1rem;
+        	font-family: 'Roboto', sans-serif;
+        } 
+
+        #about {
+        padding-bottom: 20em;
+        padding-top: 10em;
+        }
+
+        #appointment{
+          margin-top: -180px;
+        }
+
+        .dugme{
+          position:absolute;
+          top: 45%;
+          left: 10.5%;
+          margin: 0 auto;
+        }
+       
+		
+	</style>
+<div id="content">
+
+   <div class="container">
+            <!-- Podaci -->
+
+                <div id="about" class="main">
+                    <h1 class="">
+                        <span id="about_goto" class="ime"><%if(user){%><%=user.name%><%}%></span>
+                        <span class="ime">  <%if(user){%><%=user.lastName%><%}%></span>
+                    </h1>
+                    <div>
+                        <div>
+                        	<a class="mejl" href="mailto:name@email.com"><%if(user){%><%=user.email%><%}%></a>
+                        </div>
+                    </div>
+                    <div class="dugme"> <a class="appointment-btn " href="/meeting">Video pozivi</a></div>
+                   
+                        
+                    
+                    <p class="tekst">Na ovoj stranici možete provjeriti sve termine koje ste zakazali</p>
+                 
+                  </div>
+                    <div class="main" id="appointment">
+                      <h2>Vaši termini:</h2>
+                    <div>
+                    <% appointments.forEach(app => { %>
+                      <hr>
+                        <div>
+                            <h3>Termin</h3>
+                            <div style="margin: 20px"class="date">Datum termina: <%=app.date%></div>
+                            <div style="margin: 20px" class="date">Broj telefona: <%=app.phoneNumber%></div>
+                            <div style="margin: 20px"class="date">Vaša lokacija: <%=app.location%></div>
+                            <div style="margin: 20px"class="date">Vaš korona status: <%=app.coronaStatus%></div>
+                            <div style="margin: 20px"class="date">Predmet termina: <%=app.subject%></div>
+                            <hr>
+                        </div>
+                      <%})%>
+                    </div>
+                    
+    </div>
+
+
+
+</div>
+</body>
+</html>

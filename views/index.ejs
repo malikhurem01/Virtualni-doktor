@@ -1,0 +1,308 @@
+<%-include('./includes/navigation')%>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container">
+      <h1><%if(user){%>Drag<%if(user.name.split("")[user.name.length-1] == 'a'){%>a <%=user.name%>,<%}else{%>i <%=user.name%>, <%}%> <%}%>dobrodošli na stranicu virtualni doktor</h1>
+      <h2>Tu smo da vas pomognemo oko novonastale pandemije.</h2>
+      <a href="#about" class="btn-get-started scrollto">Započnite</a>
+      
+    </div>
+  </section><!-- End Hero -->
+
+  
+
+
+
+  <main id="main">
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+
+      <div class="container">
+
+
+        <div class="row" style="margin-left: 140px; width: 100%;">
+          <div class="col-xl-12 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-3 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="icofont-hand-drawn-left"></i>
+                    <h4 style="margin-top: 15px;">Usporeni pregledi</h4>
+                    <p>Pandemija je usporila preglede u zdravstvenim centrima. Oslobodite se frustracija koristeći se našom uslugom</p>
+                  </div>
+                </div>
+                <div class="col-xl-3 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="icofont-ambulance-crescent"></i>
+                    <h4 style="margin-top: 15px;">Brzo i besplatno</h4>
+                    <p>Vršimo brze i besplatne preglede pacijenata putem video poziva</p>
+                  </div>
+                </div>
+                <div class="col-xl-3 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="icofont-safety"></i>
+                    <h4 style="margin-top: 15px;">Sigurniji pregledi</h4>
+                    <p>Budite bez rizika od zaraze prilikom posjete doktora uživo u zdravstvenom centru</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>O nama</h2>
+          <p>Virtualni doktor je online ambulanta koja Vama omogućava da posjetite vašeg doktora, te uz minimalne napore dobijete brz, besplatan i siguran pregled bez rizika od zaraze virusom COVID-19</p>
+        </div>
+      </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="count-box">
+              <i class="icofont-doctor-alt"></i>
+              <span data-toggle="counter-up">25</span>
+              <p>Registrovanih korisnika</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
+            <div class="count-box">
+              <i class="icofont-patient-bed"></i>
+              <span data-toggle="counter-up">27</span>
+              <p>Zakazanih pregleda</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="icofont-ui-video-chat"></i>
+              <span data-toggle="counter-up">16</span>
+              <p>Obavljenih sastanaka</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+            <div class="count-box">
+              <i class="icofont-slightly-smile"></i>
+              <span data-toggle="counter-up">16</span>
+              <p>Zadovoljnih mušterija</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Usluge</h2>
+          <p>Vaša online ambulanta je tu da vam pruži vrhunske usluge praćene dokazanim iskustvom naših najboljih doktora. Vršimo preglede i dijagnoze manjih oboljenja na daljinu, putem video poziva, uz unaprijed dogovorene termine</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-stethoscope-alt"></i></div>
+              <h4><a href="">Pregled na daljinu</a></h4>
+              <p>Vaša dijagnoza može biti uspostavljena bez napuštanja Vašeg doma</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-drug"></i></div>
+              <h4><a href="">Izdavanje recepata</a></h4>
+              <p>U vremenu pandemije, sačuvajte sebe i Vaše ukućane od odlaska doktoru za recept za lijekove</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-prescription"></i></div>
+              <h4><a href="">Preporuke vrhunskih ljekara</a></h4>
+              <p>Imajte sigurne i provjerene informacije za vaše zdravlje</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-heartbeat"></i></div>
+              <h4><a href="">Dijagnoza manjih oboljenja</a></h4>
+              <p>Zbog sigurnosti naših pacijenata, naša online ambulanta vrši uspotavljanje dijagnoza isključivo manjih oboljenja</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-play-alt-2"></i></div>
+              <h4><a href="">Video konsultacije</a></h4>
+              <p>Putem video poziva obavite razgovor sa našim ljekarima i utvrdite vaše zdravstveno stanje</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+            <div class="icon-box">
+              <div class="icon"><i class="icofont-ui-home"></i></div>
+              <h4><a href="">Udobnost i praktičnost</a></h4>
+              <p>Iz topline Vašeg doma uživajte u pogodnostima naših usluga</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+     <!-- ======= Appointment Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Zakažite sastanak</h2>
+          <p>Kako biste zakazali pregled sve što je potrebno jeste da se registrujete na našu stranicu i zakažete termin na upitniku ispod. U najkraćem mogućem vremenu na Vašu e-mail adresu ćete dobiti e-poštu u kojoj će pisati da li je Vaš termin odobren. Sve što trebate poslije toga uraditi jeste da u navedenom terminu uđete na link koji ste dobili.</p>
+        </div>
+
+                <form action="/make" method="post">
+          <div class="form-row">
+            <div class="col-md-4 form-group">
+             <input type="text" name="name" class="form-control" id="name" <%if(user){%> value=<%=user.name%><%}%> placeholder="Vaše ime:" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Vaš Email:" data-rule="email" <%if(user){%> value=<%=user.email%><%}%> data-msg="Please enter a valid email" />
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group">
+              <input type="tel" class="form-control" name="phoneNumber" id="phone" placeholder="Broj telefona: " data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-4 form-group">
+              <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Datum termina koji vam odgovara: " data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group">
+              <select name="coronaStatus" id="hadCorona" class="form-control" placeholder="hasdh">
+                <option value="Imao/la sam COVID-19">Imao/la sam COVID-19</option>
+                <option value="Nisam imao/la COVID-19">Nisam imao/la COVID-19</option>
+                <option value="Osjećam simptome">Osjećam simptome</option>
+              </select>
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-4 form-group">
+              <input class="form-control" type="text" name="location" placeholder="Kanton: ">
+              <div class="validate"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <textarea name="subject" class="form-control" name="message" rows="5" placeholder="Predmet: "></textarea>
+            <div class="validate"></div>
+          </div>
+          
+          <div class="text-center"><button type="submit" class="appointment-btn" style="outline:none; border:none;">Zakažite termin</button></div>
+        </form>
+      </div>
+    </section><!-- End Appointment Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Kontakt</h2></div>
+      </div>
+
+<div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sarajevo+(Virtual%20Doctor)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+
+      <div class="container">
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Lokacija:</h4>
+                <p>Sarajevo, Bosna i Hercegovina</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@primjer.ba</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Telefon:</h4>
+                <p>+387 00 000 000</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <h3 style="margin-bottom: 30px; font-weight: 700;">Kontaktirajte nas</h3>
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" <%if(user){%> value=<%=user.name%><%}%> placeholder="Vaše ime:" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Vaš Email:" data-rule="email" <%if(user){%> value=<%=user.email%><%}%> data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Predmet:" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Poruka:"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Učitavanje</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Vaša poruka je poslana.</div>
+              </div>
+              <div class="text-center"><button type="submit">Pošaljite poruku</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <%-include('./includes/js')%>
+
+</body>
+
+</html>
