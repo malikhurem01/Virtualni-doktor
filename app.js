@@ -13,8 +13,7 @@ const mainRoutes = require('./routes/main');
 const app = express();
 
 const store = new MongoDBStore({
-  uri:
-    'mongodb+srv://malik:pokloniba@pokloni.zso6v.mongodb.net/Virtual?retryWrites=true&w=majority',
+  uri: 'mongodb+srv://malik:pokloniba@pokloni.rssgj.mongodb.net/virtualnidoktor?retryWrites=true&w=majority',
   collection: 'sessions'
 });
 

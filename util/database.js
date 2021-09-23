@@ -6,7 +6,7 @@ const MongoClient = mongodb.MongoClient;
 let _db;
 const mongoConnect = () => {
   return MongoClient.connect(
-    'mongodb+srv://malik:pokloniba@pokloni.zso6v.mongodb.net/Virtual?retryWrites=true&w=majority'
+    'mongodb+srv://malik:pokloniba@pokloni.rssgj.mongodb.net/virtualnidoktor?retryWrites=true&w=majority'
   )
     .then(client => {
       console.log(client);
